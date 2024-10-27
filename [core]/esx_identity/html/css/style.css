@@ -1,0 +1,182 @@
+body {
+	font-family: sans-serif;
+	overflow: hidden; 
+	display: none;
+	color: #000000;
+	padding: 0;
+	margin: 0;
+	cursor: auto; /* Agrega esta línea */
+}
+
+.wallpaper {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	background-image: url(../img/wallpaper.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.depo_logo {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: .6;
+	top: 10%;
+}
+
+.depo_welcome {
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 1vw;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.466);
+}
+
+.dialog {
+	width: 400px;
+	opacity			: 0.95;
+	position      	: absolute;
+	margin-left: auto;
+	margin-right: auto; 
+	top				: 30.0%;
+	padding: 50px;
+	left            : 50%; /* à 50%/50% du parent référent */
+	transform       : translate(-50%); /* décalage de 50% de sa propre taille */
+	background-color: transparent;
+	border-radius   : 5px;
+	border: none;
+	margin:5px;
+	margin-bottom:20px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-shadow: 1px 1px black;
+    font-weight: 900;
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border: none;
+	border-radius: 5px;
+	text-align:left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	opacity: 1; /* Firefox */
+}
+
+.radio-toolbar {
+	margin-top: 2rem;
+}
+
+.radio-toolbar input[type="radio"] {
+	opacity: 0;
+	position: absolute;
+	width: 36%;
+}
+
+.radio-toolbar label {
+	display: inline-block;
+	margin-top: 5px;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+	font-size: 16px;
+    border: 2px solid transparent;
+	border-radius: 5px;
+	width: 36%;
+	transition: .5s;
+}
+
+.radio-toolbar input[type="radio"]:checked + label {
+	width: 36%;
+    background-color:#737373;
+	border-color: #737373;
+	color: white;
+	text-shadow: 1px 1px black;
+    font-weight: 900;
+}
+
+.radio-toolbar input[type="radio"]:focus + label {
+	border: 2px solid #444;
+	width: 36%;
+	color: white;
+	text-shadow: 1px 1px black;
+    font-weight: 900; 
+}
+
+.radio-toolbar label:hover {
+	background-color: #a6a6a670;
+	transition: .5s;
+	width: 36%;
+}
+
+button {
+	display: block;
+	margin-top: 5px;
+	padding: 10px;
+	background-color: #737373;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	text-shadow: 1px 1px black;
+    font-weight: 900;
+	width: 100%;
+	font-family: arial;
+	font-weight: bold;
+	transition: .5s;
+
+}
+
+input:focus {
+	outline: none;
+}
+
+h1 {
+	display: block;
+	margin-top: 5px;
+	margin-right: 5px;
+	padding: 10px;
+	background-color: #737373;
+	width: 93%;
+	text-align: center;
+}
+
+.range-wrap {
+	position: relative;
+	margin: 2rem auto 3rem;
+	
+}
+
+.range {
+	width: 100%; 
+}
+
+button:hover {
+	background-color: #A6A6A6;
+	transition: .5s;
+}
+
+.bubble {
+	background: transparent;
+	color: white;
+	text-shadow: 1px 1px black;
+    font-weight: 900;
+	padding: 4px 12px;
+	position: absolute;
+	border-radius: 4px;
+	font-size: 12px;
+	left: 50%;
+	transform: translateX(-50%);
+}

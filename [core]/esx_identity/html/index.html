@@ -1,0 +1,165 @@
+<html>
+	<head>
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body onkeydown="TriggeredKey(this)">
+		<div class="wallpaper"></div>
+
+		<div class="dialog">
+			<form id="register" name="register" action="#">
+				<input style="text-align: center;" id="firstname" type="text" class="" name="firstname" placeholder="Nombre" onKeyDown="if(this.value.length==16 && event.keyCode!=8) return false;" onkeypress="if (isNumber(event) == true) return false;" onKeyUp="checkFirstName()" onmouseup="checkFirstName()"><br>
+				<input style="text-align: center;" id="lastname" type="text" class="" name="lastname" placeholder="Apellido" onKeyDown="if(this.value.length==16 && event.keyCode!=8) return false;" onkeypress="if (isNumber(event) == true) return false;" onKeyUp="checkLastName()" onmouseup="checkLastName()"><br>
+				<input style="text-align: center;" id="dateofbirth" type="text" name="dateofbirth" class="" placeholder="Fecha de Nacimiento" dateformat="M d y" min="01/01/1900" max="12/31/2020" onfocus="(this.type='date')" onkeypress="if ( isNaN(String.fromCharCode(event.keyCode) )) return false;" onchange="checkDOB()" onKeyUp="checkDOB()" onmouseup="checkDOB()"><br>
+				<center>
+					<div class="radio-toolbar">
+						<input type="radio" id="radiom" name="sex" value="m" checked>
+						<label for="radiom">Hombre</label>
+					
+						<input type="radio" id="radiof" name="sex" value="f">
+						<label for="radiof">Mujer</label>
+					</div>
+				</center>
+					<div class="range-wrap" style="width: 100%;">
+						<input type="range" id="height" class="range" min="48" max="96" value="48">
+						<output class="bubble"></output>
+					</div>
+				<button id="submit" type="submit"><font size="3px">Crear</font></button>
+			</form>
+		</div>
+
+		<span class="depo_welcome">¡Bienvenido a Deportados Roleplay, esperemos que disfrutes!</span>
+		<script>
+
+			const allRanges = document.querySelectorAll(".range-wrap");
+			allRanges.forEach(wrap => {
+				const range = wrap.querySelector(".range");
+				const bubble = wrap.querySelector(".bubble");
+
+				range.addEventListener("input", () => {
+					setBubble(range, bubble);
+				});
+				setBubble(range, bubble);
+			});
+
+			function setBubble(range, bubble) {
+				const val = range.value;
+				const min = range.min ? range.min : 0;
+				const max = range.max ? range.max : 100;
+				const newVal = Number(((val - min) * 100) / (max - min));
+				bubble.innerHTML = '1.' + val + 'm';
+				bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+			}
+		
+			var myFirstName = document.getElementById('firstname');
+			var myLastName = document.getElementById('lastname');
+			var myDOB = document.getElementById('dateofbirth');
+			var myHeight = document.getElementById('height');
+
+			function isNumber(e) {
+				var key=e.which || e.KeyCode;
+				if ( key >=48 && key <= 57) {
+					return true; 
+				}
+				else {
+					return false;
+				}
+			}
+
+			function checkFirstName() {
+				var value = myFirstName.value;
+				if(value.trim().match(/^[a-zA-Z][0-9a-zA-Z .,'-]*$/) == null) {
+					myFirstName.style.backgroundColor = '#a83838';
+					myFirstName.style.color = 'black';
+				}
+				else {
+					if(value.length > 0 && value.length < 17) {
+						myFirstName.style.backgroundColor = '#34a34a';
+						myFirstName.style.color = 'white';
+					}
+					else {
+						myFirstName.style.backgroundColor = '#a83838';
+						myFirstName.style.color = 'black';
+					}
+				}
+			}
+
+			function checkLastName() {
+				var value = myLastName.value;
+				if(value.trim().match(/^[a-zA-Z][0-9a-zA-Z .,'-]*$/) == null) {
+					myLastName.style.backgroundColor = '#a83838';
+					myLastName.style.color = 'black';
+				}
+				else {
+					if(value.length > 0 && value.length < 17) {
+						myLastName.style.backgroundColor = '#34a34a';
+						myLastName.style.color = 'white';
+					}
+					else {
+						myLastName.style.backgroundColor = '#a83838';
+						myLastName.style.color = 'black';
+					}
+				}
+			}
+			
+			function checkDOB() {
+				var date = new Date($('#dateofbirth').val());
+				day = date.getDate();
+				month = date.getMonth() + 1;
+				year = date.getFullYear();
+				if (isNaN(month) || isNaN(day) || isNaN(year)) {
+					myDOB.style.backgroundColor = '#a83838';
+					myDOB.style.color = 'black';
+				}
+				else {
+					var dateInput = [month, day, year].join('/');
+
+					var regExp = /^(\d{1,2})(\/|-)(\d{1,2})(\/|-)(\d{4})$/;
+					var dateArray = dateInput.match(regExp);
+
+					if (dateArray == null){
+						return false;
+					}
+
+					month = dateArray[1];
+					day= dateArray[3];
+					year = dateArray[5];        
+
+					if (month < 1 || month > 12){
+						myDOB.style.backgroundColor = '#a83838';
+						myDOB.style.color = 'black';
+					}
+					else if (day < 1 || day> 31) { 
+						myDOB.style.backgroundColor = '#a83838';
+						myDOB.style.color = 'black';
+					}
+					else if ((month==4 || month==6 || month==9 || month==11) && day ==31) {
+						myDOB.style.backgroundColor = '#a83838';
+						myDOB.style.color = 'black';
+					}
+					else if (month == 2) {
+						var isLeapYear = (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+						if (day> 29 || (day ==29 && !isLeapYear)){
+							myDOB.style.backgroundColor = '#a83838';
+							myDOB.style.color = 'black';
+						}
+					}
+					else {
+						myDOB.style.backgroundColor = '#34a34a';
+						myDOB.style.color = 'white';	
+					}				
+				}
+			}
+
+			function TriggeredKey(e) {
+				var keycode;
+				if (window.event) keycode = window.event.keyCode;
+				if (window.event.keyCode == 13 || window.event.keyCode == 27) return false;
+			}
+		</script>
+		<script src="js/script.js" type="text/javascript"></script>
+	</body>
+</html>

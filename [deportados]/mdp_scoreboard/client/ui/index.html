@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>BM_HUD</title>
+</head>
+
+<body>
+    <div id="app" v-if="show">
+        <section class="server_stats" v-if="serverStats">
+            <div class="box">
+                <div class="text">
+                    <i class="fas fa-ambulance" style="margin-right: 5px; color: rgb(0, 213, 0);">:</i>{{medicos}}
+                    <i class="fas fa-siren-on" style="margin-right: 5px; color: rgb(55, 105, 161);">:</i>{{cops}} <br>
+                    <br>
+                    <i class="fas fa-user" style="color: rgb(129, 161, 55)"> </i> En línea: {{players}} / {{maxPlayers}}
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

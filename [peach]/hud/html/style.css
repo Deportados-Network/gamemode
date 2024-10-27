@@ -1,0 +1,572 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+body {
+  overflow: hidden;
+  /* background-image: url("../assets/image.png"); */
+  background-size:  cover;
+  font-family: 'Montserrat', sans-serif;
+  color:#fff;
+  /* background-color: #719eff; */
+  font-weight: 700;
+}
+
+.logo-elbj{
+  height: auto;
+  position: absolute;
+  left: 44.3%;
+  top: 1vw;
+  /* opacity: 0.7; */
+  /**/
+  /**/
+  font-style: italic;
+  font-size: 1vw;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.arribademinimapa {
+  position: absolute;
+  bottom: 20vh;
+  left: 1.5vw;
+
+  /* arriba hora
+  bottom: 6vw;
+  right: 2vw; */
+
+  /* bottom:20vh;
+  left: 1.5vw; */
+}
+
+.economia {
+  display: flex;
+  font-size: 0.8vw;
+  text-align: left;
+  font-weight: 700;
+  /* text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5); */
+  margin-top: 0vw;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 8px;
+  border-radius: 10px;
+
+  /* font-style: oblique; */
+  /* font-style: oblique 40deg;  */
+}
+.hidden {
+  display: none !important;
+}
+
+ .tiempohora {
+  position: absolute;
+  display:flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+  gap: 8px;
+  bottom: 1.7vh;
+  right: 2vw;
+  width: auto;
+  /* height: 5vh; */
+  padding: 5px 5px;
+  font-size: 0.9vw;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.25);
+
+  font-weight: 700;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+.horajs, .fechajs {
+  padding: 0 0 0 0.5vh;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+/* .hora, .tiempo {
+width: 5vw;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.377);
+padding: 10px 10px 10px;
+gap: 0px;
+border-radius: 8px;
+} */
+
+.hora svg, .tiempo svg{
+  fill: white;
+  height: 2vh;
+}
+
+/* .efectivo {
+  color:#ffffff;
+  padding: 0 0 0 0.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  : rgba(0, 0, 0, 0.35);
+  padding: 10px;
+  border-radius: 8px;
+}
+.banco {
+  color:#ffffff;
+  padding: 0 0 0 0.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 10px;
+  border-radius: 8px;
+} */
+
+.elnombre,
+.laid {
+  padding: 0 0 0 0.5vh;
+  font-style: italic;
+  font-size: 0.8vw;
+}
+
+.contedorMicrofono{
+  height: 2.7vh;
+  width: 2.7vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  max-width: 5vw;
+  margin-top: 0.5vw;
+}
+
+.mugshot {
+  max-width: 50px;
+  max-height: 50px;
+}
+.trabajo {
+  min-width: 100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+  width: 15vw;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.cont-alimentos{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: .5vw;
+  margin-top: 0.2vw;
+}
+
+
+.eltrabajo {
+  font-style: normal;
+  padding: 0.32vw;
+  /* border-radius: 0.2vw; */
+  color: #fff;
+  font-weight: 900;
+  text-align: right;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 1vw;
+  /* border-radius: 0.3vw; */
+}
+
+/* el nombre y la id */
+/* .dataplayer {
+  display:flex;
+  position: relative;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 5px;
+} */
+.dataplayer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 5px;
+  max-width: 300px; /* Ancho maximo */
+  overflow: hidden; /* Ocultar si ecxede el maximo */
+}
+
+/* --------------COMIDA-------------- */
+
+/* .circulo {
+  display: flex;
+  width: 2vw;
+  height: 2vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30%;
+  border: 0.15vw solid;
+  background-color: rgba(0, 0, 0, 0.15);
+} */
+
+
+/* .circulo i {
+  font-size: 1vw;
+} */
+
+.bebida i {
+  background: -webkit-linear-gradient(90deg, #3273ff 0%, #3273ff 50%, rgba(255, 255, 255, 1) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* --- */
+  font-size: 1.2vw;
+  display: flex;
+  width: 1.7vw;
+  height: 1.7vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30%;
+  border: 0.15vw solid;
+  border-color: #3273ff;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.comida i {
+  background: -webkit-linear-gradient(90deg, #ffae00 0%, #ffae00 50%, rgba(255, 255, 255, 1) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* --- */
+  font-size: 1.2vw;
+  display: flex;
+  width: 1.7vw;
+  height: 1.7vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30%;
+  border: 0.15vw solid;
+  border-color: #ffae00;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* .comida {
+  border-color: #ffae00;
+}
+
+.bebida {
+  border-color: #3273ff;
+} */
+
+/* --------------COMIDA-------------- */
+
+.mugshot {
+  border-radius: 50%;
+  height: 2.6vw;
+}
+
+.todoelhudcar {
+  position: absolute;
+  bottom: 1.5vh;
+  right: 41vw;
+  font-size: 1.2vw;
+  /* si pongo left se achica de la derecha y si pongo right de la izquierda */
+}
+.autitohud {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.25);
+  /* width: 10vw; */
+  gap: 1vw;
+  justify-content: space-around;
+  padding: 2px 2px;
+  border-radius: 10px;
+}
+
+.cinturon {
+  animation: pulso 1s infinite;
+  padding:0px;
+  margin:0px;
+  border-radius: .4vw;
+}
+
+.numspeed, .textmotor, .gasolina {
+  /* width: 2vw; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /*flex-direction: row; */
+  gap: 2px; /* separar iconos velocimetro de txt */
+}
+.textos p {
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+}
+
+.numspeed span, .textmotor span, .gasolina span, .cinturon span {
+  /* font-size: 1vw; */
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 0 2px #252525;
+}
+.textmotor p, .gasolina p, .cinturon p {
+  /* font-size: 1.5vw; */
+  line-height: 0.2vw;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 2px #252525;
+}
+.numspeed p {
+  /* font-size: 1.5vw; */
+  line-height: 0.2vw;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 2px #252525;
+}
+
+
+
+.active {
+  opacity:5;
+  border-radius: 50px;
+  animation: talking 1s infinite;
+}
+
+.svg-icon{
+  height: 2.5vh;
+  fill: white;
+}
+
+.svg-micro{
+  height: flex;
+  color: rgba(11, 228, 58, 0.863) !important;
+}
+
+.Susurrar {
+  color:rgb(255, 230, 0) !important;
+
+}
+.Normal {
+  color:rgb(11, 228, 58, 0.863) !important;
+  
+}
+.Gritar {
+  color:rgb(255, 81, 0) !important;
+  
+}
+
+.svg-cinturon{
+  height: 3vh;
+  /* fill: rgb(172, 0, 0); */
+}
+
+.fa-money-bill-wave{
+  color: rgb(0, 160, 64);
+  /* background-color: rgba(0, 0, 0, 0.5) ;
+  padding: 6px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.fa-cc-visa{
+  color: rgb(179, 0, 0);
+  /* background-color: rgba(0, 0, 0, 0.5) ;
+  padding: 6px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.fa-user-ninja{
+  color: rgb(58, 58, 58);
+  /* background-color: rgba(0, 0, 0, 0.5) ;
+  padding: 6px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.fa-star{
+  color: rgb(255, 238, 0);
+  /* background-color: rgba(0, 0, 0, 0.5) ;
+  padding: 6px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fa-car-burst{
+  color: rgb(179, 0, 0);
+  /* background-color: rgba(255, 255, 255) ; */
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.fa-gauge-high{
+  color: rgb(17, 100, 255);
+  /* background-color: rgba(255, 255, 255) ; */
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.fa-gas-pump{
+  color: rgb(255, 166, 0);
+  /* background-color: rgba(255, 255, 255) ; */
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.svg-cinturon{
+  color: rgb(255, 43, 43);
+  /* background-color: rgba(255, 255, 255) ; */
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+.fa-clock{
+  color: rgb(255, 255, 255);
+  /* background-color: rgba(255, 255, 255) ; */
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.fa-calendar-days{
+  color: rgb(255, 255, 255);
+  /* background-color: rgba(255, 255, 255) ; */
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* .fa-globe{
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255) ;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+} */
+
+/* .fa-tint{
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255) ;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+} */
+
+
+@keyframes fade {
+    0%{
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 100%;
+    }
+}
+
+@keyframes pulso {
+	0% {
+		opacity: 0.1;
+		
+	}
+
+	50% {
+		opacity: 1;
+		box-shadow: 0 0 0 10px rgba(119, 0, 0, 0);
+	}
+
+	100% {
+		opacity: 0.1;
+		box-shadow: 0 0 0 0 rgba(119, 0, 0, 0);
+	}
+}
+
+@keyframes talking {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(60, 255, 0, 0);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.336);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(119, 0, 0, 0);
+	}
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8345449064.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script> 
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="todoelHUd">
+       
+        <div class="trabajo">
+            <div class="eltrabajo">
+                <span class="job">Cargando...</span>
+            </div>
+            <div class="economia">
+                <div class="efectivo">
+                    <span>
+                        <i class="fa-solid fa-money-bill-wave"> </i>
+                    </span>
+                    <span class="moneyjs">Cargando...</span>
+                </div>
+                <div class="banco">
+                    <span>
+                        <i class="fa-brands fa-cc-visa"> </i>
+                    </span>
+                    <span class="bankjs">Cargando...</span>
+                </div>
+                <div class="black_money">
+                    <span>
+                        <i class="fas fa-user-ninja"> </i>
+                    </span>
+                    <span class="black_moneyjs">Cargando...</span>
+                </div>
+				<div class="coins">
+                    <span>
+                        <i class="fas fa-star"> </i>
+                    </span>
+                    <span class="coinsjs">Cargando...</span>
+                </div>
+            </div>
+            <div class="cont-alimentos">
+                <div class="comida">
+                    <i class="fas fa-hamburger"> </i>
+                </div>
+                <div class="bebida">
+                    <i class="fas fa-tint"> </i>
+                </div>                    
+            </div>            
+        </div>
+        <div class="arribademinimapa">
+            <div class="dataplayer">
+                <div class="carapelado">
+                    <div id="microJs" class="contedorMicrofono">                    
+                        <i class="fa-solid fa-microphone svg-micro voiceDistance"></i>
+                    </div>    
+                </div>
+                <div class="identificador">
+                    <span class="laid">Cargando...</span>
+                    <span class="respuesta"></span>
+                </div>
+                <div class="nombre">
+                    <span class="elnombre">Cargando...</span>
+                </div>
+            </div>
+        </div>
+        <div class="status"></div>
+        <div class="todoelhudcar">
+            <div class="autitohud">
+                <div class="numspeed">
+                    <span><i class="fa-solid fa-gauge-high"></i></span>
+                    <p>373</p>
+                </div>
+                <div class="gasolina">
+                    <span>
+                        <i class="fa-solid fa-gas-pump"></i>
+                    </span>
+                    <p>373</p>
+                </div>
+                <div class="textmotor">
+                    <span><i class="fa-solid fa-car-burst"></i></span>
+                    <p>373</p>
+                </div>
+                <div class="cinturon pulso">
+                    <span><svg class="svg-cinturon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-seatbelt" viewBox="0 0 24 24"><path d="M12,2C13.11,2 14,2.9 14,4C14,5.11 13.11,6 12,6A2,2 0 0,1 10,4A2,2 0 0,1 12,2M12.39,14.79C14.03,14.79 15.46,14.89 16.64,15.04C16.7,12.32 16.46,9.92 16,9C15.87,8.73 15.69,8.5 15.5,8.3L7.43,15.22C8.79,15 10.5,14.79 12.39,14.79M7.46,17C7.59,18.74 7.85,20.5 8.27,22H10.34C10.05,21.12 9.84,20.09 9.68,19C9.68,19 12,18.56 14.32,19C14.16,20.09 13.95,21.12 13.66,22H15.73C16.17,20.45 16.43,18.61 16.56,16.79C15.41,16.65 14,16.54 12.39,16.54C10.46,16.54 8.78,16.75 7.46,17M12,7C12,7 9,7 8,9C7.66,9.68 7.44,11.15 7.37,12.96L13.92,7.34C12.93,7 12,7 12,7M18.57,5.67L17.43,4.34L13.92,7.35C14.47,7.54 15.05,7.84 15.5,8.3L18.57,5.67M20.67,15.83C20.58,15.8 19.14,15.33 16.64,15.04C16.63,15.61 16.6,16.2 16.56,16.79C18.81,17.07 20.1,17.5 20.12,17.5L20.67,15.83M7.37,12.96L3.43,16.34L4.32,17.82C4.34,17.81 5.5,17.36 7.46,17C7.35,15.59 7.32,14.2 7.37,12.96Z" /></svg></span>
+                </div>
+            </div>
+        </div>
+        <div class="tiempohora">
+            <div class="hora"><i class="fa-solid fa-clock"></i><span class="horajs">...</span></div>
+            <div class="tiempo"><i class="fa-solid fa-calendar-days"></i><span class="fechajs">...</span></div>
+        </div>
+    </div>
+	<script>
+        function startClockThread() {
+            setInterval(function () {
+                var time = $(".horajs");
+                var date_text = $(".fechajs");
+
+                var date = new Date();
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                var seconds = date.getSeconds();
+
+                // Agrega un cero delante si los valores son menores que 10
+                var current_time = `${(hours < 10 ? '0' : '')}${hours}:${(minutes < 10 ? '0' : '')}${minutes}:${(seconds < 10 ? '0' : '')}${seconds}`;
+                var current_date = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+
+                time.text(current_time);
+                date_text.text(current_date);
+
+            }, 1000);
+        }
+
+        function checkAndHideZeroBalances() {
+            setInterval(function () {
+                var efectivoValue = parseInt($(".moneyjs").text());
+                var bancoValue = parseInt($(".bankjs").text());
+				var coinsValue = parseInt($(".coinsjs").text());
+                var black_moneyValue  = parseInt($(".black_moneyjs").text());
+
+                if (efectivoValue === 0) {
+                    $(".efectivo").addClass("hidden");
+                } else {
+                    $(".efectivo").removeClass("hidden");
+                }
+
+                if (bancoValue === 0) {
+                    $(".banco").addClass("hidden");
+                } else {
+                    $(".banco").removeClass("hidden");
+                }
+
+                if (coinsValue === 0) {
+                    $(".coins").addClass("hidden");
+                } else {
+                    $(".coins").removeClass("hidden");
+                }
+
+                if (black_moneyValue === 0) {
+                    $(".black_money").addClass("hidden");
+                } else {
+                    $(".black_money").removeClass("hidden");
+                }
+                
+                if (efectivoValue === 0 && bancoValue === 0 && coinsValue === 0 && black_moneyValue === 0) {
+                    $(".economia").css({ 'padding': '0', 'gap': '0', 'background-color': 'transparent' });
+                } else {
+                    $(".economia").css({ 'padding': '8px', 'gap': '15px', 'background-color': 'rgba(0, 0, 0, 0.25)' });
+                }
+
+            }, 1000);
+        }
+
+        $(document).ready(function () {
+            startClockThread();
+            checkAndHideZeroBalances();
+        });
+    </script>
+</body>
+</html>

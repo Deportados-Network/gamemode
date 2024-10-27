@@ -1,0 +1,171 @@
+body {
+    margin-top: 14%;
+    margin-right: -2%;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.toast {
+    width: 100px;
+    float: right;
+}
+
+.wrapper {
+    width: 100px;
+    height: auto;
+    background-color: #1e1e1e;
+    float: right;
+}
+
+.main {
+    margin: 12px 16px 12px 56px;
+    position: relative;
+}
+
+.main::before {
+    font-size: 24px;
+    top: calc(50% - 12px);
+    left: -40px;
+    line-height: 24px;
+    position: absolute;
+}
+
+/* Correcto */
+
+.correcto-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    color: #47cf73;
+}
+
+.correcto {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+/* General */
+
+.general-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f05a";
+    color: #2f83ff;
+}
+
+.general {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Staff */
+
+.staff-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f085";
+    color: #ff9913e1;
+}
+
+.staff {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Advertencia */
+
+.advertencia-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f071";
+    color: #ffc107;
+}
+
+.advertencia {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Error */
+
+.error-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f06a";
+    color: #dc3545;
+}
+
+.error {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Mensajes */
+
+.mensajes-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f7cd";
+    color: #f38847;
+}
+
+.mensajes {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Desbloquear auto */
+
+.desbloqueado-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f13e";
+    color: #f3f047;
+}
+
+.desbloqueado {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Bloquear auto */
+
+.bloqueado-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f023";
+    color: #f3f047;
+}
+
+.bloqueado {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Sueldo */
+
+.sueldo-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f3d1";
+    color: #47ff41;
+}
+
+.sueldo {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}
+
+/* Texto Largo */
+
+.textolargo-icon::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f085";
+    color: #6c757d;
+}
+
+.textolargo {
+    background-color: rgba(15, 15, 15, 0.5);
+    color: #fff;
+    padding: 5px 5px 5px 5px;
+}

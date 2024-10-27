@@ -1,0 +1,1 @@
+ALTER TABLE `users` ADD COLUMN `important_ids` longtext NOT NULL DEFAULT '[]';

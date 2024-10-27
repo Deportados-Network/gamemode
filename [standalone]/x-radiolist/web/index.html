@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>x-radiolist</title>
+    
+    <style>
+        .radio-list-container {
+            font-style: italic;
+            position: absolute;
+            top: 40%;
+            right: 0%;
+            text-align: right;
+            padding: 5px;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            margin-right: 5px;
+            border-radius: 5px;
+            font-size: 0.7vw;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        #main-container {
+            display: none;
+        }
+
+        .talking {
+            font-style: italic;
+            position: relative;
+            display: block;
+            animation: pulse 0.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse {
+            to {
+                color: #4caf50;
+            }
+        }
+
+        .titulo {
+            font-style: italic;
+            font-weight: 900;
+            font-size: 1.4vw;
+            text-transform: uppercase;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+
+    <script type="text/javascript">
+        window.addEventListener("message", function(event) {
+            var item = event.data;
+
+            if (item.radioId != null) {
+                document.getElementById("main-container").style.display = 'block';
+                let radioListElem = document.getElementById("radio-list");
+
+                if (!radioListElem.firstChild) {
+                    let listHeader = document.createElement("div");
+
+                    listHeader.id = "radio-list-header";
+                    listHeader.textContent = "";
+                    listHeader.style.textDecorationLine = "none";
+
+                    radioListElem.appendChild(listHeader);
+                }
+
+                if (item.radioName != null) {
+                    let listItem = document.createElement("div");
+
+                    listItem.id = "radio-list-item-" + item.radioId;
+                    listItem.textContent = item.radioName;
+
+                    radioListElem.appendChild(listItem);
+                } else if (item.radioTalking != null) {
+                    let listItem = document.getElementById("radio-list-item-" + item.radioId)
+                    
+                    if (item.radioTalking) {
+                        listItem.classList.add("talking");
+                    } else {
+                        listItem.classList.remove("talking");
+                    }
+                } else {
+                    let listItem = document.getElementById("radio-list-item-" + item.radioId)
+                    radioListElem.removeChild(listItem);
+                }
+            }
+
+            if (item.clearRadioList) {
+                let radioListElem = document.getElementById("radio-list");
+                document.getElementById("main-container").style.display = 'none';
+
+                while (radioListElem.firstChild) {
+                    radioListElem.removeChild(radioListElem.firstChild);
+                }
+            }
+            
+            if (item.changeVisibility) {
+                if (item.visible == true) {
+                    document.getElementById("radio-list").style.display = 'block';
+                } else if (item.visible == false) {
+                    document.getElementById("radio-list").style.display = 'none';
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div id="main-container" class="radio-list-container">
+        <div class="titulo">Radio</div>
+        <div id="radio-list"></div>
+    </div>
+</body>
+
+</html>

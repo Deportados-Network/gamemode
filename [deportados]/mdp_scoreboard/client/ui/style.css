@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+body {
+    overflow: hidden;
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+:root {
+    --background-color: #0000006b;
+    --box-shadow: rgba(0, 0, 0, 0.47);
+}
+
+.sub-box {
+    display: flex;
+    align-items: center;
+}
+
+.sub-box i {
+    margin-right: 5px;
+}
+
+.playerJob {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    margin-right: 5px;
+    background: var(--background-color);
+    box-shadow: 0 2px 2px var(--box-shadow);
+    z-index: -1;
+}
+
+.server_stats {
+    position: absolute;
+    height: 70px;
+    width: auto;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.server_stats .box {
+    width: auto;
+    height: 100%;
+    background: var(--background-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 2px var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.server_stats .text {
+    font-size: 13.5px;
+    align-items: top;
+    justify-content: space-around;
+    padding: 10px;
+    height: 100%;
+}
+
+
+.server_stats .text i {
+    vertical-align: middle; /* Añadido para alinear verticalmente el icono */
+    margin-right: 5px;
+}
+
+.server_stats .text i.fas {
+    font-size: 13px;
+}
+
+
+
+.playerMoney {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.playerMoney .box {
+    width: auto;
+    height: 100%;
+    background: var(--background-color);
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px var(--box-shadow);
+}
+
+.weapon {
+    position: absolute;
+    top: 125px;
+    right: 0;
+    margin-right: 5px;
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    background: var(--background-color);
+    box-shadow: 0 2px 2px var(--box-shadow);
+}
+
+.speedometer {
+    position: absolute;
+    bottom: 20px;
+    left: 16%;
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.basic_data {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    margin-right: 5px;
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.basic_data .box {
+    width: auto;
+    height: 100%;
+    background: var(--background-color);
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px var(--box-shadow);
+}
+
+.needs {
+    position: absolute;
+    bottom: 20px;
+    left: 16%;
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.needs .box {
+    width: auto;
+    height: 100%;
+    background: var(--background-color);
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px var(--box-shadow);
+}
+
+.speedometer .box {
+    width: auto;
+    height: 100%;
+    background: var(--background-color);
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px var(--box-shadow);
+}
+
+.text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-style: bold;
+    white-space: nowrap;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.server_title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 10px;
+    font-family: 'Poppins';
+    font-style: bold;
+    margin-top: -5px;
+    color: rgba(192, 192, 192, 0.815);
+}
+
+.server_title h1 {
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.connected-players {
+    text-align: center;
+    font-size: 13.5px;
+    margin-bottom: 10px;
+}
+
+.police-fire-ambulance {
+    display: flex;
+    justify-content: space-between;
+}
+
+.police-fire-ambulance .box {
+    width: 48%;
+    background: var(--background-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 2px var(--box-shadow);
+}
+
+.police-fire-ambulance .text {
+    font-size: 13.5px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+}
