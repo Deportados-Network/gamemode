@@ -283,7 +283,7 @@ AddEventHandler("FIREAC:ScreenShotFromClient", function (URL, REASON, DETAILS)
                                             url = URL,
                                         },
                                         footer = {
-                                            text = "depo | System - "..os.date("%Y/%m/%d | %X")..""
+                                            text = "Deportados | System - "..os.date("%Y/%m/%d | %X")..""
                                         },
                                         title = "Un **STAFF** sacó una Screenshot!",
                                         description = "```Player: "..NAME.."\nReason:** "..REASON.."\n**Details:** "..DETAILS.."\n**Coords:** "..COORDS.."\n**Steam Hex:** "..STEAM.."\n**Discord:** "..DISCORD.."\n**License:** "..FIVEML.."\n**Live:** "..LIVE.."\n**Xbox:** "..XBL.."\n**ISP:** "..ISP.."\n**Country:** "..COUNTRY.."\n**City:** "..CITY.."\n**IP:** "..IP.."\n**VPN:** "..PROXY.."\n**Hosting:** "..HOSTING.."",
@@ -1843,7 +1843,7 @@ function FIREAC_SCREENSHOT(SRC, REASON, DETAILS, ACTION)
                                     title = "Un **STAFF** sacó una Screenshot",
                                     description = "```Player: "..NAME.."\nID: "..SRC.."\nSteam identifier: "..STEAM.."\nLicense: "..FIVEML.."\nXbox: "..XBL.."\nIP: "..IP.."```",
                                     footer = {
-                                        text = "depo | System - "..os.date("%Y/%m/%d | %X")..""
+                                        text = "Deportados | System - "..os.date("%Y/%m/%d | %X")..""
                                     },
                                 }
                             }

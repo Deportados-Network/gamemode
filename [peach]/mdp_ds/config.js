@@ -26,25 +26,25 @@ const DebugLogs = false;
 const EnableDiscordBot = true;
 
 // DISCORD BOT
-const DiscordBotToken = "MTI5OTc1MDgyODQ2NjM3Mjc2OA.GMfh2q.j8vdtEAMjg_G0A90f5B5YQ4WslJExudBAcKmdA";
+const DiscordBotToken = "MTMwMDkwNjMyOTg3NDg5MDg2NA.GKH9bg.akgicwi3KAg-QeOZKP3nnbAKq8Z_dIABZVYei0";
 const DiscordGuildId = "1288648291676065802";
 
 // STAFF CHAT
 const EnableStaffChatForwarding = true;
-const DiscordStaffChannelId = "1297207518514384926";
+const DiscordStaffChannelId = "1300903858700288111";
 const AdditionalStaffChatRoleIds = [
     // "000000000000000",
 ];
 
 // WHITELISTING / ALLOWLISTING
 const EnableWhitelistChecking = true;
-const DiscordWhitelistRoleIds = "1297007333351882844";
+const DiscordWhitelistRoleIds = "12970073333130090385870028811151882844";
 
 // SLASH COMMANDS / DISCORD PERMISSIONS
 const EnableDiscordSlashCommands = true;
-const DiscordModRoleId = "1297007264481153054";
-const DiscordAdminRoleId = "1297007259276017737";
-const DiscordGodRoleId = "1297007220445155380";
+const DiscordModRoleId = "1300884767688101928";
+const DiscordAdminRoleId = "1300884700545417216";
+const DiscordGodRoleId = "1297336889598283776";
 
 // DISCORD BOT STATUS
 const EnableBotStatusMessages = true;
@@ -72,7 +72,7 @@ const EnableLoggingWebhooks = true;
 const LoggingWebhookName = "Deportados | Logs";
 const LoggingAlertPingId = "1177846968119214143";
 const LoggingWebhooks = {
-    "example": "https://discord.com/api/webhooks/1299743540116455445/cdmqURbM-PCNgeCAbb7BhAN7BVTRTIMpbPqCtUZTrqAnSA05bCXcxwoQ51VRBwsbBXU-",
+    // "example": "https://discord.com/api/webhooks/1299743540116455445/cdmqURbM-PCNgeCAbb7BhAN7BVTRTIMpbPqCtUZTrqAnSA05bCXcxwoQ51VRBwsbBXU-",
 };
 
 
